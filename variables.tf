@@ -1,5 +1,12 @@
 terraform {
-  required_version = ">= 0.12"
+  required_version = ">= 1.2"
+
+  required_providers {
+    grafana = {
+      source = "grafana/grafana"
+      version = "1.22.0"
+    }
+  }
 }
 
 variable "region" {
